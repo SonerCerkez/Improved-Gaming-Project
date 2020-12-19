@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <script src="fullscreen.js"></script>
+    <link rel="stylesheet" href="js.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px; 
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1f1;
+            width: 100%;
+            padding: 20px;
+
+        }
+        .pre::first-letter {
+            color: tomato;
+        }
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: lightblue;
+            color: #fff;
+            cursor: pointer;
+        }
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+         li a {
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+         }
+         li a:hover {
+             background-color: #111;
+         }
+         .artic {
+             text-align: center;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             font-size: 40px;
+             text-transform: capitalize;
+             color: green;
+         }
+         
+         
+         img {
+             margin: 0;
+             opacity: 0.7;
+             float: right;
+         }
+         h3 {
+             color: tomato;
+         }
+         .preje {
+             color: #f1f1f1;
+             font-size: 20px;
+             text-shadow: 2px 2px 5px green;
+         }
+         .center {
+         height: 95px;
+         left: 50%;
+         margin-top: -355px;
+         margin-left: -280px;
+         position: absolute;
+         top: 50%;
+         width: 560px;
+        }  
+        .ngjyra {
+            color: rgb(47, 150, 235);
+            font-size: 21px;
+            text-shadow: 2px 2px 5px green;
+        }
+        h1 {
+            text-shadow: 2px 2px 5px red;
+        }
+        .text1 {
+            text-align: center;
+        }
+        h4 {
+            text-align: right;
+            color: palegreen;
+            font-size: larger;
+            text-decoration: underline;
+            margin-left: 940px;
+
+            
+        }
+        .jok {
+         height: 70px;
+         left: 50%;
+         margin-top: -334px;
+         margin-left: -945px;
+         position: absolute;
+         top: 50%;
+         width: 120px;
+         opacity: 0.9;
+        }
+        .percentage {
+        height: 160px;
+        margin-right: 850px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-top: 370px;
+        opacity: 2;
+        }
+        h4 {
+            text-decoration: underline;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li> <a href="https://www.bbc.co.uk/news/topics/cq23pdgvgxvt/animal-welfare">TË REJAT</a></li>
+        <li> <a href="https://www.rspca.org.uk/utilities/contactus">SUPPORT</a></li>
+        <li> <a href="https://en.wikipedia.org/wiki/Animal_welfare">RRETH PR SERVER</a></li>
+        <li> <a href="https://en.wikipedia.org/wiki/Animal_welfare">ADMINAT</a></li>
+    </ul>
+    
+    <div class="text1">
+    <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Prishtina Server ESP
+    </a>
+    <div class="loader"></div>
+    
+    
+    <embed src="roxanne-a-cs-go-montage.mp3" loop="true" hidden="true" autostart="true">
+        
+        
+</div> 
+
+    <img src="prishtina.jpg.jpg" class="jok">
+    <img src="banner_560x95.png" class="center" >
+    <pre class="preje"> SERVER SUMMARY
+        Name: Prishtina Esport Public | EPS
+        Game: Counter Strike Global Offensive   Browse: <br> Counter Strike Global Offensive Servers
+        Address: 46.105.86.18   Port: 27015   Status: Alive
+        <h4><a href="#"> Join our discord:https://discord.gg/dXJQXKV6</a></h4>
+        </pre>
+        
+    <video autoplay muted loop id="myVideo">
+        <source src="Roxanne _ A CS_GO MONTAGE.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <pre class="ngjyra">46.105.86.18:27015 - Counter Strike Global Offensive Server in Kosova</pre>
+                <h1>Prishtina Esport Public | EPS</h1>                                                                                   
+                <pre>                                                                                                                                            Server Manager: Joker Undercover
+GAME SERVER RANKING                                                                                                                           
+   Game Server Rank: 160th (99th Percentile)                                                                                                Co-Manager: Sparki 
+   Highest (past month): 123rd   Lowest (past month): 2850th                                                                                   
+                                                                                                                                            Web Creator: Boss
+                 </pre>
+                <p>You can Play or Pause the video.</p>
+                
+                <p>Thanks for being part of my project!</p> 
+                <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
+            <script>
+                var video = document.getElementById("myVideo");
+                var btn =document.getElementById("myBtn");
+                function myFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML = "Play";
+                    }
+                }
+            </script>
+</body>
+</html>
+
+
